@@ -156,7 +156,7 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.pushButton_10.setText(_translate("Form", "Clear"))
-        self.label.setText(_translate("Form", "Oyuna başlayın"))
+        self.label.setText(_translate("Form", "Start the game"))
         self.label_2.setText(_translate("Form", "_X_"))
         self.label_3.setText(_translate("Form", "_o_"))
 
@@ -172,11 +172,11 @@ class Ui_Form(object):
 
         if self.count%2==0:
             buton.setText("O")
-            self.label.setText("Sıra X'de")
+            self.label.setText("X's Turn")
 
         else:
             buton.setText("X")
-            self.label.setText("Sıra O'da")
+            self.label.setText("O's Turn")
         a = self.pushButton.text()
         b = self.pushButton_2.text()
         c = self.pushButton_3.text()
@@ -187,7 +187,7 @@ class Ui_Form(object):
         h = self.pushButton_7.text()
         i = self.pushButton_8.text()
         if a == b == c == "X":
-            self.label.setText("X kazandı")
+            self.label.setText("X won")
             self.xpuan += 1
             self.label_4.setText(str(self.xpuan))
             self.pushButton.setEnabled(False)
@@ -200,7 +200,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif d == e == f == "X":
-            self.label.setText("X kazandı")
+            self.label.setText("X won")
             self.xpuan+=1
             self.label_4.setText(str(self.xpuan))
             self.pushButton.setEnabled(False)
@@ -213,7 +213,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif g == h == i == "X":
-            self.label.setText("X kazandı")
+            self.label.setText("X won")
             self.xpuan += 1
             self.label_4.setText(str(self.xpuan))
             self.pushButton.setEnabled(False)
@@ -226,7 +226,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif a == d == g == "X":
-            self.label.setText("X kazandı")
+            self.label.setText("X won")
             self.xpuan += 1
             self.label_4.setText(str(self.xpuan))
             self.pushButton.setEnabled(False)
@@ -239,7 +239,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif b == e == h == "X":
-            self.label.setText("X kazandı")
+            self.label.setText("X won")
             self.xpuan += 1
             self.label_4.setText(str(self.xpuan))
             self.pushButton.setEnabled(False)
@@ -252,7 +252,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif c == f == i == "X":
-            self.label.setText("X kazandı")
+            self.label.setText("X won")
             self.xpuan += 1
             self.label_4.setText(str(self.xpuan))
             self.pushButton.setEnabled(False)
@@ -265,7 +265,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif a == e == i == "X":
-            self.label.setText("X kazandı")
+            self.label.setText("X won")
             self.xpuan += 1
             self.label_4.setText(str(self.xpuan))
             self.pushButton.setEnabled(False)
@@ -278,7 +278,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif g == e == c == "X":
-            self.label.setText("X kazandı")
+            self.label.setText("X won")
             self.xpuan += 1
             self.label_4.setText(str(self.xpuan))
             self.pushButton.setEnabled(False)
@@ -291,7 +291,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif a == b == c == "O":
-            self.label.setText("O kazandı")
+            self.label.setText("O won")
             self.opuan += 1
             self.label_5.setText(str(self.opuan))
             self.pushButton.setEnabled(False)
@@ -304,7 +304,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif d == e == f == "O":
-            self.label.setText("O kazandı")
+            self.label.setText("O won")
             self.opuan += 1
             self.label_5.setText(str(self.opuan))
             self.pushButton.setEnabled(False)
@@ -317,7 +317,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif g == h == i == "O":
-            self.label.setText("O kazandı")
+            self.label.setText("O won")
             self.opuan += 1
             self.label_5.setText(str(self.opuan))
             self.pushButton.setEnabled(False)
@@ -330,7 +330,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif a == d == g == "O":
-            self.label.setText("O kazandı")
+            self.label.setText("O won")
             self.opuan += 1
             self.label_5.setText(str(self.opuan))
             self.pushButton.setEnabled(False)
@@ -343,7 +343,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif b == e == h == "O":
-            self.label.setText("O kazandı")
+            self.label.setText("O won")
             self.opuan += 1
             self.label_5.setText(str(self.opuan))
             self.pushButton.setEnabled(False)
@@ -356,7 +356,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif c == f == i == "O":
-            self.label.setText("O kazandı")
+            self.label.setText("O won")
             self.opuan += 1
             self.label_5.setText(str(self.opuan))
             self.pushButton.setEnabled(False)
@@ -369,7 +369,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif a == e == i == "O":
-            self.label.setText("O kazandı")
+            self.label.setText("O won")
             self.opuan += 1
             self.label_5.setText(str(self.opuan))
             self.pushButton.setEnabled(False)
@@ -382,7 +382,7 @@ class Ui_Form(object):
             self.pushButton_8.setEnabled(False)
             self.pushButton_9.setEnabled(False)
         elif g == e == c == "O":
-            self.label.setText("O kazandı")
+            self.label.setText("O won")
             self.opuan += 1
             self.label_5.setText(str(self.opuan))
             self.pushButton.setEnabled(False)
@@ -401,9 +401,9 @@ class Ui_Form(object):
         for i in self.liste:
             i.setText("")
         if self.count%2==0:
-            self.label.setText("Sıra X'de")
+            self.label.setText("X's turn")
         else:
-            self.label.setText("Sıra O'da")
+            self.label.setText("O's Turn")
         self.liste=list()
         self.pushButton.setEnabled(True)
         self.pushButton_2.setEnabled(True)
